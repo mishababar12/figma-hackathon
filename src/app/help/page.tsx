@@ -68,7 +68,7 @@ export default function Help() {
             
             <div className='w-[923px] h-[56px] mt-8'>
                <p className='text-[16px] font-medium'>Can I pay for my order with multiple methods?</p>
-               <p className='text-[15px] font-normal'>No, payment for Nike orders can't be split between multiple payment methods.</p>
+               <p className='text-[15px] font-normal'>No, payment for Nike orders cant be split between multiple payment methods.</p>
             </div>
 
             <div className='w-[923px] h-[56px]'>
