@@ -14,7 +14,7 @@ export default function Navbar() {
         
         <div className="flex md:gap-4 sm:gap-3 gap-2 text-gray-400">
           <Link href="/">Find Link Store <span>| </span></Link>
-          <Link href="/" className="text-black">Help <span>| </span></Link>
+          <Link href="/help" className="text-black">Help <span>| </span></Link>
           <Link href="/contact" className="text-black">Join Us <span>| </span></Link>
           <Link href="/login" className="text-black">Sign In</Link>
         </div>
@@ -29,8 +29,8 @@ export default function Navbar() {
 
         {/* Center section (Navigation Links) */}
         <nav className="hidden md:flex gap-4 md:gap-6 font-medium md:text-[16px] sm:text-[14px] text-[10px]">
-          <Link href="/new" className="hover:text-black whitespace-nowrap">New & Featured</Link>
-          <Link href="/cart" className="hover:text-black whitespace-nowrap">Men</Link>
+          <Link href="#" className="hover:text-black whitespace-nowrap">New & Featured</Link>
+          <Link href="#" className="hover:text-black whitespace-nowrap">Men</Link>
           <Link href="#" className="hover:text-black whitespace-nowrap">Women</Link>
           <Link href="#" className="hover:text-black whitespace-nowrap">Kids</Link>
           <Link href="/products" className="hover:text-black whitespace-nowrap">Sale</Link>
@@ -48,9 +48,14 @@ export default function Navbar() {
             />
             <FaSearch className="absolute right-3 top-2.5 text-gray-500" />
           </div>
+          <Link href="/productDetails">
           <FaHeart className="text-gray-700 md:w-[24px] md:h-[24px] sm:w-[20px] sm:h-[20px] w-[16px] h-[16px] cursor-pointer hover:text-black" />
+          </Link>
+          <Link href="/cart">
           <FaShoppingBag className="text-gray-700 md:w-[24px] md:h-[24px] sm:w-[20px] sm:h-[20px] w-[16px] h-[16px] cursor-pointer hover:text-black" />
+          </Link>
         </div>
+
       </div>
 
       {/* Mobile Search Bar */}

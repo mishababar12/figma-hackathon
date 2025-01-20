@@ -37,11 +37,15 @@ export default function Pic() {
         <div className="w-full sm:w-[320px] md:w-[340px] lg:w-[340px] h-[510.36px] sm:mb-0">
           <div className="w-full h-[441.36px]">
             <Image src={one} alt={"image&amp;apos;"} width={1344} height={700} className="object-cover" />
-            <div className='lg:mt-8 md:mt-8'>
-           
+            <div className='lg:mt-8 md:mt-8 flex gap-40'>
+           <div>
           <p className='text-black text-sm font-semibold'>Nike Air Max Pulse</p>
-              <p className='text-gray-500 '>Women Shoes</p>
-              <p>1399</p>
+         
+              <p className='text-gray-500'>Women Shoes</p>
+              </div>
+             
+              <p className='font-medium'>₹ 1399</p>
+             
               
               </div>
           
@@ -56,10 +60,12 @@ export default function Pic() {
           <div className="w-full h-[441.36px]">
             <Image src={two} alt={"image&amp;apos;"} width={1344} height={700} className="object-cover" />
           
-            <div className='lg:mt-8 md:mt-8'>
+            <div className='lg:mt-8 md:mt-8 flex gap-40'>
+              <div>
           <p className='text-black text-sm font-semibold'>Nike Air Max Pulse</p>
               <p className='text-gray-500 '>Men Shoes</p>
-              <div>1399</div>
+              </div>
+              <div className='font-medium'>₹ 1399</div>
               
               </div>
             
@@ -71,10 +77,12 @@ export default function Pic() {
           <div className="w-full h-[441.36px]">
             <Image src={three} alt={"image&amp;apos;"} width={1344} height={700} className="object-cover" />
           
-            <div className='lg:mt-8 md:mt-8'>
+            <div className='lg:mt-8 md:mt-8 flex gap-32'>
+              <div>
           <p className='text-black text-sm font-semibold'>Nike Air Max Pulse 97 SE</p>
               <p className='text-gray-500 '>Men Shoes</p>
-              <p>1699</p>
+              </div>
+              <p className='font-medium'>₹ 1699</p>
               </div>
            
           </div>

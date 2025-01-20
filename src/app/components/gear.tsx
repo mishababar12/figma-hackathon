@@ -4,8 +4,9 @@ import img1 from "../../../public/img1.png";
 import img2 from "../../../public/img2.png"; 
 import img3 from "../../../public/img3.png";                                                                                                                                   
 import img4 from "../../../public/img4.png";
-import frame12 from "../../../public/frame12.png"
-import frame13 from "../../../public/frame13.png"
+import { IoIosArrowForward } from "react-icons/io";
+import { IoIosArrowBack } from "react-icons/io";
+
 
 export default function Gear() {
   return (
@@ -16,11 +17,37 @@ export default function Gear() {
 
        {/* Top Images (Left and Right) */}
        <div className="flex mb-6">
-        <div className="w-[211px] h-[48px] mr-auto">
-          <Image src={frame12} alt="image" width={211} height={48} className="object-cover w-full h-full" />
+        <div className="w-[211px] h-[48px] flex ml-auto">
+           {/* Right div - Shop Buttons */}
+                   
+                      <h1 className='text-[16px] mt-3'>Shop Mens</h1>
+                      <div className='flex gap-2 ml-1'>
+                        <div className='w-[46px] h-[46px] bg-gray-100 rounded-full flex justify-center items-center cursor-pointer'>
+                          <IoIosArrowBack className='text-black' />
+                        </div>
+                        <div className='w-[46px] h-[46px] bg-gray-200 rounded-full flex justify-center items-center cursor-pointer'>
+                          <IoIosArrowForward className='text-black' />
+                        </div>
+                      
+                    </div>
+         
         </div>
-        <div className="w-[211px] h-[48px] ">
-          <Image src={frame13} alt="image" width={211} height={48} className="object-cover w-full h-full" />
+        <div className="w-[211px] h-[48px] flex ml-auto">
+           {/* Right div - Shop Buttons */}
+                   
+           <h1 className='text-[16px] mt-3'>Shop Womens</h1>
+                      <div className='flex gap-2 ml-1'>
+                        <div className='w-[46px] h-[46px] bg-gray-100 rounded-full flex justify-center items-center cursor-pointer'>
+                          <IoIosArrowBack className='text-black' />
+                        </div>
+                        <div className='w-[46px] h-[46px] bg-gray-200 rounded-full flex justify-center items-center cursor-pointer'>
+                          <IoIosArrowForward className='text-black' />
+                        </div>
+                      
+                    </div>
+         
+
+         
         </div>
       </div>
       
@@ -38,9 +65,11 @@ export default function Gear() {
             <Image src={img3} alt="image" width={280} height={280} className="object-cover w-full h-full" />
           </div>
           {/* Content Below Image */}
-          <div className="w-[280px] ">
+          <div className="w-[280px] flex gap-8">
+            <div>
             <p className="text-sm font-semibold">Nike Dri-FIT ADV TechKnit Ultra</p>
             <p className="text-sm text-gray-500">Mens Short-Sleeve <br /> Running Top</p>
+            </div>
             <p className="text-sm font-semibold">₹3 895</p>
           </div>
         </div>
@@ -52,9 +81,11 @@ export default function Gear() {
             <Image src={img2} alt="image" width={280} height={280} className="object-cover w-full h-full" />
           </div>
           {/* Content Below Image */}
-          <div className="w-[280px]">
+          <div className="w-[280px] flex gap-20">
+            <div>
             <p className="text-sm font-semibold">Nike Dri-FIT Challenger</p>
             <p className="text-sm text-gray-500">Mens 18cm (approx.) 2- <br /> in-1 Versatile Shorts</p>
+            </div>
             <p className="text-sm font-semibold">₹2 495</p>
           </div>
         </div>
@@ -66,9 +97,11 @@ export default function Gear() {
             <Image src={img1} alt="image" width={280} height={280} className="object-cover w-full h-full" />
           </div>
           {/* Content Below Image */}
-          <div className="w-[280px] ">
+          <div className="w-[280px] flex gap-10 ">
+            <div>
             <p className="text-sm font-semibold">Nike Dri-FIT ADV Run Division</p>
             <p className="text-sm text-gray-500">Womens Long-Sleeve <br /> Running Top</p>
+            </div>
             <p className="text-sm font-semibold">₹5 295</p>
           </div>
         </div>
@@ -80,9 +113,11 @@ export default function Gear() {
             <Image src={img4} alt="image" width={280} height={280} className="object-cover w-full h-full" />
           </div>
           {/* Content Below Image */}
-          <div className="w-[280px] ">
+          <div className="w-[280px]  flex gap-10">
+            <div>
             <p className="text-sm font-semibold">Nike Fast</p>
             <p className="text-sm text-gray-500">Womens Mid-Rise 7/8 Running <br /> Leggings with Pockets</p>
+            </div>
             <p className="text-sm font-semibold">₹3 795</p>
           </div>
         </div>
